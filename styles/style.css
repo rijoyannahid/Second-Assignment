@@ -139,3 +139,134 @@ body {
     text-align: center;
   }
 }
+
+
+/* our plant part */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6fc;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+.section-header h2 .orange {
+  color: #ff6600;
+}
+
+.section-header p {
+  color: #555;
+  margin-top: 0.5rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+/* Plants Grid */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.plant-card {
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.plant-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.plant-card .price {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+/* Hover Effect */
+.plant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.plant-card img:hover {
+  transform: scale(1.05);
+}
+
+/* Button */
+.btn {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e65500;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .plants-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plants-grid {
+    grid-template-columns: 1fr;
+  }
+}

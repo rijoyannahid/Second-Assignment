@@ -533,3 +533,173 @@ body {
   }
 }
 
+
+/* Email part */
+
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* 🌼 Subscribe Section */
+.subscribe {
+  background: url('news-letter-bg.png') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-overlay {
+  text-align: center;
+  
+  padding: 40px 20px;
+  width: 90%;
+  max-width: 700px;
+  color: white;
+}
+
+.subscribe-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  width: 100%;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.subscribe-form button {
+  padding: 14px 25px;
+  font-size: 1rem;
+  background-color: #f55a00;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #d94d00;
+}
+
+
+
+
+
+/* Footer part */
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-left p {
+  margin-top: 10px;
+  color: #555;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  flex: 2 1 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-links ul li:hover {
+  color: #f55a00;
+}
+
+.footer-social {
+  flex: 1 1 150px;
+  display: flex;
+  align-items: top;
+  gap: 15px;
+}
+
+.footer-social img {
+  width: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .subscribe-overlay h2 {
+    font-size: 2rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}
+
